@@ -1,7 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
 html {
+    height: 100vh;
+    width: 100vw;
     background: url(assets/alfiosmarch23.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+@media (min-width: 800px) and (max-width: 1262px) {
+    html {
+        background-size: auto;
+    }
 }
 
 @media (min-width: 1262px) {
@@ -13,14 +22,83 @@ html {
 body { margin: 0; }
 
 .content {
-    margin-top: 125px;
-    margin-left: 175px;
+    position: fixed;
+    top: 125px;
+    left: 175px;
 }
 
 .title {
     font-size: 45px;
+    font-family: 'Old Standard TT', serif;
 }
 
 .info {
     font-size: 19px;
+    font-family: 'Old Standard TT', serif;
+}
+
+.ig {
+    display:block;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    background-image: url(assets/ig.png);
+    background-size: contain;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.email {
+    min-width: 180px;
+    padding: 3px;
+    border-radius: 2px;
+    border: 1px solid white;
+    background-color: transparent;
+    outline: none;
+}
+
+.email::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #000;
+}
+.email:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #000;
+    opacity:  1;
+}
+.email::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #000;
+    opacity:  1;
+}
+.email:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #000;
+}
+
+.button:hover {
+    background-color: white;
+    opacity: 0.5;
+}
+
+.button {
+    display: inline-block;
+    width: 30px;
+    border: none;
+    border-radius: 30px;
+    vertical-align: middle;
+    background-color: transparent;
+    height: 30px;
+    background-image: url(assets/right-arrow.png);
+    background-size: contain;
+    outline: none;
+    cursor: pointer;
+}
+
+.credits {
+    position: fixed;
+    bottom: 20px;
+    right: 11px;
+    color: white;
+    opacity: 0.4;
+    font-size: 14px;
+    font-family: 'Old Standard TT', serif;
 }
