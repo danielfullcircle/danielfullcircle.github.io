@@ -4,12 +4,43 @@ html {
     height: 100vh;
     width: 100vw;
     background: url(assets/alfiosmarch23.jpg) no-repeat center center fixed;
+}
+
+html {
     background-size: cover;
 }
 
-@media (min-width: 800px) and (max-width: 1262px) {
+body {
+    margin: 0;
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+}
+
+.content {
+    position: fixed;
+    top: 150px;
+    left: 20px;
+}
+
+@media (min-width: 330px) {
+    body {
+        font-size: 19px;
+    }
+}
+
+@media (min-width: 700px) {
+    .content {
+        top: 125px;
+        left: 100px;
+    }
+}
+
+@media (min-width: 800px) {
     html {
         background-size: auto;
+    }
+    .content {
+        left: 175px;
     }
 }
 
@@ -19,22 +50,12 @@ html {
     }
 }
 
-body { margin: 0; }
-
-.content {
-    position: fixed;
-    top: 125px;
-    left: 175px;
-}
-
 .title {
-    font-size: 45px;
-    font-family: 'Old Standard TT', serif;
+    font-size: 2.368em;
 }
 
 .info {
-    font-size: 19px;
-    font-family: 'Old Standard TT', serif;
+    font-size: 1em;
 }
 
 .ig {
@@ -99,6 +120,11 @@ form {
     right: 11px;
     color: white;
     opacity: 0.4;
-    font-size: 14px;
-    font-family: 'Old Standard TT', serif;
+    font-size: 0.737em;
+}
+
+@media (max-width: 930px) {
+    .credits {
+        color: #000;
+    }
 }
