@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html {
+    background: url(assets/alfiosmarch23.jpg) no-repeat center center fixed;
+}
+
+@media (min-width: 1262px) {
+    html {
+        background-size: 100%;
+    }
+}
+
+body { margin: 0; }
+
+.content {
+    margin-top: 125px;
+    margin-left: 175px;
+}
+
+.title {
+    font-size: 45px;
+}
+
+.info {
+    font-size: 19px;
+}
