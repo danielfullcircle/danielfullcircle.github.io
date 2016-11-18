@@ -59,11 +59,22 @@ body {
 }
 
 .ig {
-    display:block;
+    display:inline-block;
     margin-top: 10px;
     width: 30px;
     height: 30px;
     background-image: url(assets/ig.png);
+    background-size: contain;
+}
+
+.fb {
+    display:inline-block;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+    background-image: url(assets/facebook-icon.jpg);
     background-size: contain;
 }
 
