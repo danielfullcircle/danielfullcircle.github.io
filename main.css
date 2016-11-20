@@ -18,8 +18,8 @@ body {
 
 .content {
     position: fixed;
-    top: 150px;
-    left: 20px;
+    top: 21vh;
+    left: 14vw;
 }
 
 @media (min-width: 330px) {
@@ -28,25 +28,21 @@ body {
     }
 }
 
-@media (min-width: 700px) {
-    .content {
-        top: 125px;
-        left: 100px;
-    }
-}
-
 @media (min-width: 800px) {
     html {
         background-size: auto;
     }
-    .content {
-        left: 175px;
+}
+
+@media (min-height: 841px) {
+    html {
+        background-size: cover;
     }
 }
 
 @media (min-width: 1262px) {
     html {
-        background-size: 100%;
+        background-size: cover;
     }
 }
 
